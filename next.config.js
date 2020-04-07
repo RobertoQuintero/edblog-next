@@ -7,7 +7,7 @@ module.exports = phase => {
     API_BLOG: (()=>{
       return isDevelopment
               ? 'https://jsonplaceholder.typicode.com'
-              : 'https://api.edblog.com'
+              : 'https://jsonplaceholder.typicode.com'
     })()
   }
   return {
