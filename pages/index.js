@@ -2,11 +2,33 @@ import Head from 'next/head'
 import Header from '../components/sections/Header'
 import fetch from 'node-fetch'
 import Post from '../components/blog/Post'
+import {NextSeo} from 'next-seo'
+
 const Home = ({posts}) => (
   <div>
-    <Head>
-      <title>Home | {process.env.SITE_NAME}</title>
-    </Head>
+    <NextSeo 
+      title='Bienvenido a EDBlog'
+      description='Edblog es una creación del curos de Next en EDteam'
+      openGraph={{
+        url : 'https:/ed.team',
+        title: 'Bienvenido a EDBlog',
+        description:'Edblog es una creación del curos de Next en EDteam',
+        images: [
+          {
+            url: 'imgaes.com/logo.svg',
+            width: 1200,
+            height: 720,
+            alt: 'Foto de perfil de edteam'
+          }
+        ],
+        site_name: 'EDblog'
+      }}
+      twitter={{
+        handle: '@edtemlat',
+        site: '@edtemlat',
+        cardType: 'summary_large_image',
+      }}
+    />
     <main className='ed-grid'>
       <h1>EDBlog</h1>
       

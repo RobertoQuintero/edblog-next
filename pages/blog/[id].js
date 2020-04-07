@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import fetch from 'node-fetch'
+import Comments from '../../components/blog/Comments'
 
 const PostBlog = ({post}) => (
-  <div>
+  <div className='ed-grid'>
     <Head>
       <title>{post.title} | EDblog</title>
     </Head>
@@ -10,6 +11,7 @@ const PostBlog = ({post}) => (
       <h1>{post.title}</h1>
       <p>{post.body}</p>
     </main>
+    <Comments id={post.id}/>
   </div>
 )
 
