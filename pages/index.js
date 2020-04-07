@@ -30,7 +30,7 @@ const Home = ({posts}) => (
       }}
     />
     <main className='ed-grid'>
-      <h1>EDBlog</h1>
+      <h1>EDBlog de Roberto Carlos desde Github</h1>
       
       <div className='ed-grid m-grid-3 row-gap'>
        {
