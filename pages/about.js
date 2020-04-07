@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-const Home = () => (
+const About = () => (
   <div>
     <Head>
       <title>About | EDblog</title>
@@ -13,4 +13,4 @@ const Home = () => (
   </div>
 )
 
-export default Home
+export default About

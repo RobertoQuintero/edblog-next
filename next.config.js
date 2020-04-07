@@ -6,7 +6,7 @@ module.exports = phase => {
     SITE_NAME: 'EDblog',
     API_BLOG: (()=>{
       return isDevelopment
-              ? 'https://jsonplaceholder.typicode.com/'
+              ? 'https://jsonplaceholder.typicode.com'
               : 'https://api.edblog.com'
     })()
   }
